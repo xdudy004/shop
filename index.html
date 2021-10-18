@@ -14,91 +14,90 @@
   <body>
     
     <header id="main-header" class="text-dark p-4 mb-3" style="background-color: rgb(180, 238, 238);">
-      <div class="container-fluid">
+      <div class="container-fluid p-0">
           <h1 id="header-title">Shopping Cart</h1>
       </div>
     </header>
 
+     <!-- How card will looks -->
+    <div class="container my-5">
+        <div class="productItems row my-2">
 
-    <!-- How card will looks -->
-    <div class="container my-4">
-      <div class="row my-2">
-        <div class="col">
-          <div class="card my-2" style="width: 18rem; height: 24rem;">
-            <img src="./img/Lenovo.JPG" class="card-img-top" alt="Product Image">
-          <div class="card-body">
-            <h5 class="card-title">Product Name: Lenovo</h5>
-            <p class="card-text">Product Price: 536.00$</p>
-            <a href="#" id="first" class="btn btn-primary">Add to Cart</a>
-          </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card" style="width: 18rem; height: 24rem;">
-            <img src="./img/MacBook.JPG" class="card-img-top" alt="Product Image">
-          <div class="card-body">
-            <h5 class="card-title">Product Name: MacBook</h5>
-            <p class="card-text">Product Price: 2697.00$</p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card" style="width: 18rem; height: 24rem;">
-            <img src="./img/Asus.JPG" class="card-img-top" alt="Product Image">
-          <div class="card-body">
-            <h5 class="card-title">Product Name: Asus</h5>
-            <p class="card-text">Product Price: 895.00$</p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-          </div>
-        </div>
-      </div>  
+            <!-- <div class="productItem col my-2">
+                <div class="card">
+                    <img src="./img/Lenovo.JPG" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Lenovo</h5>
+                        <p class="card-price">536.00$</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="productItem col my-2">
+                <div class="card">
+                    <img src="./img/MacBook.JPG" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook</h5>
+                        <p class="card-price">2697.00$</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="productItem col my-2">
+                <div class="card">
+                    <img src="./img/Asus.JPG" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Asus</h5>
+                        <p class="card-price">895.00$</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>  
     </div>
 
-    <section class="container content-section" style="background-color: rgb(180, 238, 238);">
-      <h2 class="section-header">CART</h2>
-      <div class="cart-title-row">
-          <span class="cart-item cart-header col cart-column">ITEM</span>
-          <span class="cart-price cart-header cart-column">PRICE</span>
-          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-      </div>
-      <div class="cart-items">
-          <div class="cart-row">
-              <div class="cart-item col cart-column">
-                  <img class="cart-item-image" src="./img/Asus.JPG" width="100" height="100">
-                  <span class="cart-item-title">Asus</span>
-              </div>
-              <span class="cart-price col cart-column">895.00$</span>
-              <div class="cart-quantity cart-column">
-                  <input class="cart-quantity-input" type="number" value="1">
-                  <button class="btn btn-danger" type="button">REMOVE</button>
-              </div>
-          </div>
-          <div class="cart-row">
-              <div class="cart-item cart-column">
-                  <img class="cart-item-image" src="./img/MacBook.JPG" width="100" height="100">
-                  <span class="cart-item-title">MacBook</span>
-              </div>
-              <span class="cart-price cart-column">2697.00$</span>
-              <div class="cart-quantity cart-column">
-                  <input class="cart-quantity-input" type="number" value="2">
-                  <button class="btn btn-danger" type="button">REMOVE</button>
-              </div>
-          </div>
-      </div>
-      <div class="cart-total">
-          <strong class="cart-total-title">Total</strong>
-          <span class="cart-total-price"></span>
-      </div>
-      <button class="btn btn-success" type="button">PURCHASE</button>
-    </section>
-    
+
+
+    <!-- Shopping List Cart -->
+    <div class="content-section container">
+        <h2 class="section-header">ORDER DETAILS</h2>
+        <div class="cart-row row">
+            <div class="cart-item cart-header col-2">ITEM</div>
+            <div class="cart-item cart-header col-3">NAME</div>
+            <div class="cart-price cart-header col-2">PRICE</div>
+            <div class="cart-quantity cart-header col-3">QUANTITY</div>
+        </div>
+        <div class="cart-items">
+            <!-- render cart items here -->
+            <!-- <div class="d-flex cart-item">
+                <div class="item-info col">
+                    <img src="./img/Asus.JPG" alt="t-shirt 1" style="width: 100px; height: 100px;">
+                    <h4>Asus</h4>
+                </div>
+                <div class="unit-price col">
+                29.99$
+                </div>
+                <div class="units col">
+                    <div class="d-inline btn minus">-</div>
+                    <div class="d-inline number">1</div>
+                    <div class="d-inline btn plus">+</div>           
+                </div>
+            </div> -->
+        </div>
+
+        <div class="cart-total">
+            <strong class="cart-total-title"></strong>
+        </div>
+        <button class="btn btn-success" type="button">PURCHASE</button>
+        <br>
+    </div>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <script src="./action.js"></script>
+    <script src="./products.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

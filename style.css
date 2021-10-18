@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Cards design */
+.card{
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid rgb(223, 17, 212);
+    box-shadow: 15px 5px 5px rgb(224, 144, 220);
+    width: 19rem; 
+    height: 26rem;
+}
+
+.card-title{
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.card-img-top{
+    border-radius: 20px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 15rem;
+    height: 22rem;
+}
+
+.card-body{
+    padding-bottom: 2rem;
+}
+
+p.card-price{
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+
+/* List with purchase */
+
+/* .container.content-section {
+    width: 720px;
+    background-color: rgb(180, 238, 238); 
+    border-radius: 10px;
+    border: 1px solid rgb(223, 17, 212);
+} */
+
+.section-header{
+    display: flex;
+    justify-content: center; 
+    padding: 5px;
+    margin-bottom: 2rem;
+}
+
+.cart-header{
+    display: flex;
+    align-items: center;
+    font-weight: bold; 
+    font-size: 1.4rem;
+}
+
+.cart-row{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.5px;
+    margin-left: 0;
+}
+
+.cart-column{
+    display: inline;
+    padding: 2px;
+    align-items: left;
+    margin-left: 0;
+    
+}
+
+.cart-item{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cart-item-title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+.cart-item-image{
+    margin: 1px;
+    display: flex-inline;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 1px solid rgb(223, 17, 212);
+    width: 100px;
+    height: 100px;
+    
+}
+
+.cart-price{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.cart-quantity-input.btn,
+.btn.btn-outline-danger,
+.cart-quantity-input.btn.plus,
+.cart-quantity-input.btn.minus{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(223, 17, 212);
+    
+    background-color: #eee;
+    width: 2.5rem;
+    height: auto;
+}
+
+
+
+
+/*  Total section */
+.cart-total{
+    display: flex;
+    margin: 2px;
+    padding: 2px 2px;
+}
+.cart-total-title{
+    font-size: 1.2rem;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.cart-total-price { 
+    font-size: 1.2rem;
+}
+.btn-success{
+    display: block;
+    margin: 40px auto;
+    font-size: 1.6rem;
+}
