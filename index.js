@@ -40,7 +40,7 @@ function addToCart(id){
         const item = products.find((product) => product.id === id);
         console.log(item);
 
-        // Add new properties number of units
+        // Add new element at the end of the array (Append to JS object)
         cart.push({
             ...item,
             numberOfUnits: 1
