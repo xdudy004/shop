@@ -4,9 +4,7 @@ const cartItemsEl = document.querySelector(".cart-items");
 const totalEl = document.querySelector(".cart-total-title");
 
 
-
-
-
+// Render finction
 function renderProducts(){
     products.forEach( (product)=> {
         productsEl.innerHTML += `
