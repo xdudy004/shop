@@ -86,7 +86,7 @@ function renderCartItems(){
             <div class="cart-row row>
                 <div class="cart-item col-4 cart-column">
                     <div class="cart-item col-2 cart-column">
-                        <img src="${item.imgSrc}" alt="${item.name}" class="cart-item-image">
+                        <img src="${item.imgSrc}" class="cart-item-image">
                     </div>
                     <div class="cart-item-title col-3">${item.name}</div>
                     <span class="cart-price col-2 cart-column">${item.price*item.numberOfUnits}$</span>
